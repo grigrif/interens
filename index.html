@@ -11,7 +11,7 @@
   <div class="recueil">
     <header class="entete">
       <div class="marque">
-        <a class="maison" href="../" title="Retour à l'accueil">~ /</a>
+        <a class="maison" href="../" data-local="../perso/index.html" title="Retour à l'accueil">~ /</a>
         <img class="logo" src="logo.webp" alt="interENS" width="96" height="96">
         <h1><span class="l-inter">inter</span><span class="l-ens">ENS</span> | Chansons</h1>
       </div>
@@ -24,5 +24,12 @@
 
   <script src="chansons.js"></script>
   <script src="app.js"></script>
+  <script>
+    // En local (fichier ouvert par double-clic), on remplace les liens
+    // entre les deux sites par les chemins des dossiers sur le PC.
+    if (location.protocol === "file:") {
+      document.querySelectorAll("[data-local]").forEach(a => { a.href = a.dataset.local; });
+    }
+  </script>
 </body>
 </html>

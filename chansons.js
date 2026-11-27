@@ -44,8 +44,13 @@ Maintenant chantons tous en coeur`,
 C'est tout le stade qui va s'enflammer
 Aller aller
 Aller aller
-Aller aller aller Kerlann
-Sobriété
+Aller aller aller Kerlann`,
+  },
+
+  {
+    titre: "Kerlann Sobriété",
+    categorie: "Kerlyon",
+    paroles: `Sobriété
 Champomi Vittel à volonté
 Joie de la tisane
 Nous allons tous à Kerlann`,
