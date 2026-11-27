@@ -5,7 +5,7 @@
 const CATEGORIES = [
   "Kerlyon",
   "À chanter tout le temps",
-  "Pour piquer les autres ENS",
+  "Piques envers les autres ENS",
   "Célébrations",
 ];
 
@@ -113,10 +113,10 @@ ENS Rennes`,
 Qui ne saute pas n'est pas rennais`,
   },
 
-  // ----- Pour piquer les autres ENS -----
+  // ----- Piques envers les autres ENS -----
   {
     titre: "Un avion à réaction",
-    categorie: "Pour piquer les autres ENS",
+    categorie: "Piques envers les autres ENS",
     remarque: "Quand quelqu'un envoie un smash dans le ciel au volley",
     audio: "audio/avion.mp3",
     duree: "0:09",
@@ -127,14 +127,14 @@ A rattrapé ton smash raté`,
 
   {
     titre: "Monster block",
-    categorie: "Pour piquer les autres ENS",
+    categorie: "Piques envers les autres ENS",
     remarque: "Instructions de volley de base",
     video: "video/monster-block.mp4?v=2",
   },
 
   {
     titre: "On n'entend pas",
-    categorie: "Pour piquer les autres ENS",
+    categorie: "Piques envers les autres ENS",
     remarque: "À remixer pour chaque ENS (lyonnais, parisiens)",
     audio: "audio/on-entend-pas.mp3",
     duree: "0:08",
@@ -144,7 +144,7 @@ On n'entend pas chanter les Saclaysiens`,
 
   {
     titre: "Mais ils sont où",
-    categorie: "Pour piquer les autres ENS",
+    categorie: "Piques envers les autres ENS",
     remarque: "À remixer pour chaque ENS (lyonnais, parisiens)",
     audio: "audio/mais-ils-sont-ou.mp3",
     duree: "0:13",
@@ -155,7 +155,7 @@ Mais ils sont où les Saclaysiens lalalala`,
 
   {
     titre: "En prépa j'étais motivé",
-    categorie: "Pour piquer les autres ENS",
+    categorie: "Piques envers les autres ENS",
     audio: "audio/tracteur.mp3",
     duree: "0:48",
     paroles: `Et en prépa j'ai tout donné
