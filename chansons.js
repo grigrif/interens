@@ -3,12 +3,10 @@
 // ============================================================
 
 const CATEGORIES = [
-  "À chanter tout le temps",
   "Kerlyon",
-  "Chansons contre Saclay",
-  "Chansons de victoire",
-  "Volley",
-  "Ultimate",
+  "Célébrations",
+  "À chanter tout le temps",
+  "Pour piquer les autres ENS",
 ];
 
 // ============================================================
@@ -38,47 +36,36 @@ Maintenant chantons tous en chœur`,
   },
 
   {
-    titre: "Et quand Kerlann",
+    titre: "La Scuola Normale Superiore",
     categorie: "Kerlyon",
-    audio: "audio/et-quand-kerlann.mp3",
-    paroles: `Et quand Kerlann se met à chanter
-C'est tout le stade qui va s'enflammer
-Aller aller
-Aller aller
-Aller aller aller Kerlann`,
+    audio: "audio/chant-de-pise.mp3",
+    paroles: `La scuola
+Normale
+Superiore`,
+  },
+
+  // ----- Célébrations -----
+  {
+    titre: "Et c'est signé",
+    categorie: "Célébrations",
+    remarque: "A chanter quand quelqu'un marque un point",
+    audio: "audio/et-c-est-signe.mp3",
+    paroles: `Et c'est signé Guigui ! clap clap
+Guigui ! clap clap
+Guigui ! clap clap`,
   },
 
   {
-    titre: "Kerlann Sobriété",
-    categorie: "Kerlyon",
-    audio: "audio/kerlann-sobriete.m4a",
-    paroles: `Sobriété
-Champomy Vittel à volonté
-Joie de la tisane
-Nous allons tous à Kerlann`,
+    titre: "On les a chicotés",
+    categorie: "Célébrations",
+    audio: "audio/on-les-a-chicotes.mp3",
+    paroles: `Olele
+Olala
+Mais qu'est-ce qui s'est passé ?
+On les a chicotés !`,
   },
 
-  {
-    titre: "Shalalala ENS Rennes",
-    categorie: "Kerlyon",
-    paroles: `Shalalalalalala
-ENS Rennes
-Shalalalalalala
-ENS Rennes`,
-  },
-
-  {
-    titre: "Aux armes !",
-    categorie: "Kerlyon",
-    remarque: "Question réponse : une personne chante, les autres répètent après lui ; pas besoin de connaître la mélodie",
-    paroles: `Aux armes !
-Aux armes !
-Nous sommes les rennais !
-Et nous allons gagner !
-Aller Rennes !
-Aller Rennes !`,
-  },
-
+  // ----- À chanter tout le temps -----
   {
     titre: "C'est la meilleure tribune",
     categorie: "À chanter tout le temps",
@@ -90,26 +77,76 @@ Encourager nos joueurs rennais`,
   },
 
   {
+    titre: "Et quand Kerlann",
+    categorie: "À chanter tout le temps",
+    audio: "audio/et-quand-kerlann.mp3",
+    paroles: `Et quand Kerlann se met à chanter
+C'est tout le stade qui va s'enflammer
+Aller aller
+Aller aller
+Aller aller aller Kerlann`,
+  },
+
+  {
+    titre: "Kerlann Sobriété",
+    categorie: "À chanter tout le temps",
+    audio: "audio/kerlann-sobriete.m4a",
+    paroles: `Sobriété
+Champomy Vittel à volonté
+Joie de la tisane
+Nous allons tous à Kerlann`,
+  },
+
+  {
+    titre: "Aux armes !",
+    categorie: "À chanter tout le temps",
+    remarque: "Question réponse : une personne chante, les autres répètent après lui ; pas besoin de connaître la mélodie",
+    paroles: `Aux armes !
+Aux armes !
+Nous sommes les rennais !
+Et nous allons gagner !
+Aller Rennes !
+Aller Rennes !`,
+  },
+
+  {
     titre: "L'ENS de l'ambiance",
-    categorie: "Kerlyon",
+    categorie: "À chanter tout le temps",
     audio: "audio/ens-de-l-ambiance.m4a",
     paroles: `L'ENS de l'ambiance
 C'est l'ENS de l'ambiance`,
   },
 
   {
-    titre: "La Scuola Normale Superiore",
-    categorie: "Kerlyon",
-    audio: "audio/chant-de-pise.mp3",
-    paroles: `La scuola
-Normale
-Superiore`,
+    titre: "Shalalala ENS Rennes",
+    categorie: "À chanter tout le temps",
+    paroles: `Shalalalalalala
+ENS Rennes
+Shalalalalalala
+ENS Rennes`,
   },
 
-  // ----- Chansons contre Saclay -----
+  {
+    titre: "Qui ne saute pas n'est pas rennais",
+    categorie: "À chanter tout le temps",
+    paroles: `Qui ne saute pas n'est pas rennais ! Hé !
+Qui ne saute pas n'est pas rennais ! Hé !`,
+  },
+
+  // ----- Pour piquer les autres ENS -----
+  {
+    titre: "Un avion à réaction",
+    categorie: "Pour piquer les autres ENS",
+    remarque: "Quand quelqu'un envoie un smash dans le ciel au volley",
+    audio: "audio/avion.mp3",
+    paroles: `Un avion à réaction
+A rattrapé ton smash raté
+A rattrapé ton smash raté`,
+  },
+
   {
     titre: "On entend pas",
-    categorie: "Chansons contre Saclay",
+    categorie: "Pour piquer les autres ENS",
     remarque: "A remixer pour chaque ENS (lyonnais, parisiens)",
     audio: "audio/on-entend-pas.mp3",
     paroles: `On entend pas chanter les saclaysiens
@@ -118,7 +155,7 @@ On entend pas chanter les saclaysiens`,
 
   {
     titre: "Mais ils sont où",
-    categorie: "Chansons contre Saclay",
+    categorie: "Pour piquer les autres ENS",
     remarque: "A remixer pour chaque ENS (lyonnais, parisiens)",
     audio: "audio/mais-ils-sont-ou.mp3",
     paroles: `Mais ils sont où ?
@@ -128,7 +165,7 @@ Mais ils sont où les Saclaysiens lalalala`,
 
   {
     titre: "Tracteur bis",
-    categorie: "Chansons contre Saclay",
+    categorie: "Pour piquer les autres ENS",
     audio: "audio/tracteur-bis.m4a",
     paroles: `Et en prépa j'ai tout donné
 Lalalilalala
@@ -152,38 +189,5 @@ Et maintenant je suis Rennais
 Lalalilalala
 Pcq j's'avais qu'on vous battrais
 Lalalilalala`,
-  },
-
-  // ----- Chansons de victoire -----
-  {
-    titre: "On les a chicotés",
-    categorie: "Chansons de victoire",
-    audio: "audio/on-les-a-chicotes.mp3",
-    paroles: `Olele
-Olala
-Mais qu'est-ce qui s'est passé ?
-On les a chicotés !`,
-  },
-
-  // ----- Volley -----
-  {
-    titre: "Un avion à réaction",
-    categorie: "Volley",
-    remarque: "Quand quelqu'un envoie un smash dans le ciel au volley",
-    audio: "audio/avion.mp3",
-    paroles: `Un avion à réaction
-A rattrapé ton smash raté
-A rattrapé ton smash raté`,
-  },
-
-  // ----- Ultimate -----
-  {
-    titre: "Et c'est signé",
-    categorie: "Ultimate",
-    remarque: "A chanter quand quelqu'un marque un point",
-    audio: "audio/et-c-est-signe.mp3",
-    paroles: `Et c'est signé Guigui ! clap clap
-Guigui ! clap clap
-Guigui ! clap clap`,
   },
 ];
