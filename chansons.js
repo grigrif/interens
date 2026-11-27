@@ -130,6 +130,8 @@ C'est l'ENS de l'ambiance`,
   {
     titre: "Shalalala ENS Rennes",
     categorie: "À chanter tout le temps",
+    audio: "audio/shalalala.mp3",
+    duree: "0:32",
     paroles: `Shalalalalalala
 ENS Rennes
 Shalalalalalala
