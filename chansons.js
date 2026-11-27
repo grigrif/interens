@@ -70,7 +70,7 @@ Allez allez allez Kerlann`,
     duree: "1:08",
     paroles: `Sobriété
 Champomy Vittel à volonté
-Je bois de la tisane
+Joie de la tisane
 Nous allons tous à Kerlann`,
   },
 
