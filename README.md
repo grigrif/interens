@@ -1,3 +1,3 @@
 # interens
 
-Receuil de chanson des inter avec un site
+Recueil de chansons des inters avec un site

@@ -30,7 +30,7 @@ const CHANSONS = [
     remarque: "Sur la mélodie de « J'ai deux passions »",
     audio: "audio/kerlyon-fusion.mp3",
     paroles: `Kerlyon Fusion
-Rennais Lyonnais à l'unisson
+Rennais, Lyonnais à l'unisson
 Chacun se bat pour ses couleurs
 Maintenant chantons tous en chœur`,
   },
@@ -48,7 +48,7 @@ Superiore`,
   {
     titre: "Et c'est signé",
     categorie: "Célébrations",
-    remarque: "A chanter quand quelqu'un marque un point",
+    remarque: "À chanter quand quelqu'un marque un point",
     audio: "audio/et-c-est-signe.mp3",
     paroles: `Et c'est signé Guigui ! clap clap
 Guigui ! clap clap
@@ -82,9 +82,9 @@ Encourager nos joueurs rennais`,
     audio: "audio/et-quand-kerlann.mp3",
     paroles: `Et quand Kerlann se met à chanter
 C'est tout le stade qui va s'enflammer
-Aller aller
-Aller aller
-Aller aller aller Kerlann`,
+Allez allez
+Allez allez
+Allez allez allez Kerlann`,
   },
 
   {
@@ -100,13 +100,13 @@ Nous allons tous à Kerlann`,
   {
     titre: "Aux armes !",
     categorie: "À chanter tout le temps",
-    remarque: "Question réponse : une personne chante, les autres répètent après lui ; pas besoin de connaître la mélodie",
+    remarque: "Question-réponse : une personne chante, les autres répètent après lui ; pas besoin de connaître la mélodie",
     paroles: `Aux armes !
 Aux armes !
-Nous sommes les rennais !
+Nous sommes les Rennais !
 Et nous allons gagner !
-Aller Rennes !
-Aller Rennes !`,
+Allez Rennes !
+Allez Rennes !`,
   },
 
   {
@@ -145,18 +145,18 @@ A rattrapé ton smash raté`,
   },
 
   {
-    titre: "On entend pas",
+    titre: "On n'entend pas",
     categorie: "Pour piquer les autres ENS",
-    remarque: "A remixer pour chaque ENS (lyonnais, parisiens)",
+    remarque: "À remixer pour chaque ENS (lyonnais, parisiens)",
     audio: "audio/on-entend-pas.mp3",
-    paroles: `On entend pas chanter les saclaysiens
-On entend pas chanter les saclaysiens`,
+    paroles: `On n'entend pas chanter les Saclaysiens
+On n'entend pas chanter les Saclaysiens`,
   },
 
   {
     titre: "Mais ils sont où",
     categorie: "Pour piquer les autres ENS",
-    remarque: "A remixer pour chaque ENS (lyonnais, parisiens)",
+    remarque: "À remixer pour chaque ENS (lyonnais, parisiens)",
     audio: "audio/mais-ils-sont-ou.mp3",
     paroles: `Mais ils sont où ?
 Mais ils sont où ?
@@ -171,23 +171,23 @@ Mais ils sont où les Saclaysiens lalalala`,
 Lalalilalala
 Aux concours j'étais préparé
 Lalalilalala
-Et j'ai pas été pris a Ulm
+Et j'ai pas été pris à Ulm
 Lalalilalala
-Mais j'ai été pris a Saclay
+Mais j'ai été pris à Saclay
 Lalalilalala
-Donc j'ai décidé de Khuber
+Donc j'ai décidé de khûber
 Lalalilalala
 En 5/2 j'ai charbonné
 Lalalilalala
 Et aux concours j'y ai recru
 Lalalilalala
-Et j'tais toujours pas pris a Ulm
+Et j'tais toujours pas pris à Ulm
 Lalalilalala
-Mais j'ai été r'pris a Saclay
+Mais j'ai été r'pris à Saclay
 Lalalilalala
 Et maintenant je suis Rennais
 Lalalilalala
-Pcq j's'avais qu'on vous battrais
+Parce que j'savais qu'on vous battrait
 Lalalilalala`,
   },
 ];
