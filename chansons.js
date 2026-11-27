@@ -50,6 +50,7 @@ Aller aller aller Kerlann`,
   {
     titre: "Kerlann Sobriété",
     categorie: "Kerlyon",
+    audio: "audio/kerlann-sobriete.m4a",
     paroles: `Sobriété
 Champomy Vittel à volonté
 Joie de la tisane
