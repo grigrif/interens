@@ -79,6 +79,16 @@ Aller Rennes !`,
   },
 
   {
+    titre: "C'est la meilleure tribune",
+    categorie: "Kerlyon",
+    audio: "audio/c-est-la-meilleure-tribune.mp3",
+    paroles: `C'est la meilleure tribune des inters
+De notre Bretagne nous sommes fiers
+Tous obsédés par la même idée
+Encourager nos joueurs rennais`,
+  },
+
+  {
     titre: "L'ENS de l'ambiance",
     categorie: "Kerlyon",
     audio: "audio/ens-de-l-ambiance.m4a",
