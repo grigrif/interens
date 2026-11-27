@@ -4,9 +4,9 @@
 
 const CATEGORIES = [
   "Kerlyon",
-  "Célébrations",
   "À chanter tout le temps",
   "Pour piquer les autres ENS",
+  "Célébrations",
 ];
 
 // ============================================================
@@ -21,6 +21,7 @@ const CATEGORIES = [
 //                (mp3, ogg, wav, m4a...)
 //  - duree     : facultatif — durée de l'audio au format "m:ss", affichée
 //                avant la lecture (la vraie durée la remplace au premier Play)
+//  - video     : facultatif — chemin d'une vidéo dans le dossier "video/" (mp4)
 //  - paroles   : entre les accents graves ` ` — les retours à la ligne sont gardés
 // ============================================================
 
@@ -36,39 +37,6 @@ const CHANSONS = [
 Rennais, Lyonnais à l'unisson
 Chacun se bat pour ses couleurs
 Maintenant chantons tous en chœur`,
-  },
-
-  {
-    titre: "La Scuola Normale Superiore",
-    categorie: "Kerlyon",
-    audio: "audio/chant-de-pise.mp3",
-    duree: "0:07",
-    paroles: `La scuola
-Normale
-Superiore`,
-  },
-
-  // ----- Célébrations -----
-  {
-    titre: "Et c'est signé",
-    categorie: "Célébrations",
-    remarque: "À chanter quand quelqu'un marque un point",
-    audio: "audio/et-c-est-signe.mp3",
-    duree: "0:08",
-    paroles: `Et c'est signé Guigui ! clap clap
-Guigui ! clap clap
-Guigui ! clap clap`,
-  },
-
-  {
-    titre: "On les a chicotés",
-    categorie: "Célébrations",
-    audio: "audio/on-les-a-chicotes.mp3",
-    duree: "0:28",
-    paroles: `Olele
-Olala
-Mais qu'est-ce qui s'est passé ?
-On les a chicotés !`,
   },
 
   // ----- À chanter tout le temps -----
@@ -158,6 +126,13 @@ A rattrapé ton smash raté`,
   },
 
   {
+    titre: "Monster block",
+    categorie: "Pour piquer les autres ENS",
+    remarque: "Instructions de volley de base",
+    video: "video/monster-block.mp4",
+  },
+
+  {
     titre: "On n'entend pas",
     categorie: "Pour piquer les autres ENS",
     remarque: "À remixer pour chaque ENS (lyonnais, parisiens)",
@@ -205,5 +180,38 @@ Et maintenant je suis Rennais
 Lalalilalala
 Parce que j'savais qu'on vous battrait
 Lalalilalala`,
+  },
+
+  // ----- Célébrations -----
+  {
+    titre: "Et c'est signé",
+    categorie: "Célébrations",
+    remarque: "À chanter quand quelqu'un marque un point",
+    audio: "audio/et-c-est-signe.mp3",
+    duree: "0:08",
+    paroles: `Et c'est signé Guigui ! clap clap
+Guigui ! clap clap
+Guigui ! clap clap`,
+  },
+
+  {
+    titre: "On les a chicotés",
+    categorie: "Célébrations",
+    audio: "audio/on-les-a-chicotes.mp3",
+    duree: "0:28",
+    paroles: `Olele
+Olala
+Mais qu'est-ce qui s'est passé ?
+On les a chicotés !`,
+  },
+
+  {
+    titre: "La Scuola Normale Superiore",
+    categorie: "Célébrations",
+    audio: "audio/chant-de-pise.mp3",
+    duree: "0:07",
+    paroles: `La scuola
+Normale
+Superiore`,
   },
 ];

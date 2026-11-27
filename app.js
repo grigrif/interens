@@ -161,6 +161,18 @@ function creerLecteur(src, dureeIndiquee) {
   return frag;
 }
 
+function creerVideo(src) {
+  const v = el("video", "video");
+  v.src = src;
+  v.controls = true;
+  v.preload = "metadata";   // juste la durée et la première image
+  v.playsInline = true;     // sur iPhone, ne passe pas en plein écran tout seul
+  // une seule chose qui joue à la fois (audio ou vidéo)
+  v.addEventListener("play", () => lecteurs.forEach(a => a !== v && a.pause()));
+  lecteurs.push(v);
+  return v;
+}
+
 function creerChanson(c, num) {
   const id = slug(c.titre);
   const art = el("article", "chanson");
@@ -171,7 +183,8 @@ function creerChanson(c, num) {
   art.append(h2);
   if (c.remarque) art.append(el("p", "remarque", c.remarque));
   if (c.audio) art.append(creerLecteur(c.audio, c.duree));
-  art.append(el("p", "paroles", c.paroles || ""));
+  if (c.video) art.append(creerVideo(c.video));
+  if (c.paroles) art.append(el("p", "paroles", c.paroles));
   return art;
 }
 

@@ -161,6 +161,16 @@ body { margin: 0; background: var(--fond); }
 .recueil h2 .num { font-size: .9rem; font-weight: 400; }
 
 .remarque { margin: 2px 0 0; color: var(--doux); font-style: italic; }
+.video {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  max-height: 70vh;
+  margin: 12px 0 0;
+  border-radius: 8px;
+  background: #000;
+}
+.pied a { color: inherit; text-decoration: underline; text-decoration-color: currentColor; }
 
 .paroles {
   white-space: pre-line;
