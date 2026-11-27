@@ -36,10 +36,20 @@ function bouton(classe, icone, label) {
   return b;
 }
 
-function creerLecteur(src) {
+// "1:08" → 68 secondes (NaN si absent ou mal écrit)
+function lireDuree(texte) {
+  const m = /^(\d+):([0-5]\d)$/.exec(String(texte || "").trim());
+  return m ? +m[1] * 60 + +m[2] : NaN;
+}
+
+function creerLecteur(src, dureeIndiquee) {
   const audio = new Audio();
   audio.preload = "none"; // ne charge le fichier qu'au premier Play
   audio.src = src;
+  // Durée écrite dans chansons.js, affichée tant que le fichier n'est pas
+  // chargé ; dès que le navigateur connaît la vraie durée, elle la remplace.
+  const dureeSecours = lireDuree(dureeIndiquee);
+  const duree = () => isFinite(audio.duration) ? audio.duration : dureeSecours;
 
   const box = el("div", "lecteur");
   const play = bouton("btn-play", ICONES.play, "Lecture");
@@ -52,7 +62,7 @@ function creerLecteur(src) {
   barre.min = 0; barre.max = 10000; barre.value = 0;
   barre.setAttribute("aria-label", "Position dans la chanson");
 
-  const temps = el("span", "temps", "0:00 / 0:00");
+  const temps = el("span", "temps", "0:00 / " + formatTemps(dureeSecours));
   const erreur = el("p", "erreur-audio", "Fichier audio introuvable : " + src);
   erreur.hidden = true;
 
@@ -73,7 +83,7 @@ function creerLecteur(src) {
   let glisse = false;
   barre.oninput = () => { glisse = true; };
   barre.onchange = () => {
-    if (isFinite(audio.duration)) audio.currentTime = barre.value / 10000 * audio.duration;
+    if (isFinite(duree())) audio.currentTime = barre.value / 10000 * duree();
     glisse = false;
   };
 
@@ -87,7 +97,7 @@ function creerLecteur(src) {
     const maintenant = performance.now();
     if (ct !== dernierConnu) { dernierConnu = ct; base = ct; baseHorloge = maintenant; }
     let t = audio.paused ? ct : base + (maintenant - baseHorloge) / 1000 * audio.playbackRate;
-    if (isFinite(audio.duration)) t = Math.min(t, audio.duration);
+    if (isFinite(duree())) t = Math.min(t, duree());
     // ne jamais reculer d'un poil (sauf vrai saut : début, boucle, déplacement)
     if (t < affiche && affiche - t < 0.5 && !audio.paused) t = affiche;
     affiche = t;
@@ -97,9 +107,9 @@ function creerLecteur(src) {
 
   const majTemps = () => {
     const t = position();
-    if (!glisse && isFinite(audio.duration)) barre.value = t / audio.duration * 10000;
+    if (!glisse && isFinite(duree())) barre.value = t / duree() * 10000;
     barre.style.setProperty("--pct", barre.value / 100 + "%");
-    const texte = formatTemps(t) + " / " + formatTemps(audio.duration);
+    const texte = formatTemps(t) + " / " + formatTemps(duree());
     if (temps.textContent !== texte) temps.textContent = texte;
   };
   audio.addEventListener("timeupdate", majTemps);
@@ -160,7 +170,7 @@ function creerChanson(c, num) {
   h2.append(el("span", "num", num), el("span", "", c.titre));
   art.append(h2);
   if (c.remarque) art.append(el("p", "remarque", c.remarque));
-  if (c.audio) art.append(creerLecteur(c.audio));
+  if (c.audio) art.append(creerLecteur(c.audio, c.duree));
   art.append(el("p", "paroles", c.paroles || ""));
   return art;
 }

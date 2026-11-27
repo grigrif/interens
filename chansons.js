@@ -19,6 +19,8 @@ const CATEGORIES = [
 //  - remarque  : facultatif (affiché en italique) — supprime la ligne si inutile
 //  - audio     : facultatif — chemin du fichier dans le dossier "audio/"
 //                (mp3, ogg, wav, m4a...)
+//  - duree     : facultatif — durée de l'audio au format "m:ss", affichée
+//                avant la lecture (la vraie durée la remplace au premier Play)
 //  - paroles   : entre les accents graves ` ` — les retours à la ligne sont gardés
 // ============================================================
 
@@ -29,6 +31,7 @@ const CHANSONS = [
     categorie: "Kerlyon",
     remarque: "Sur la mélodie de « J'ai deux passions »",
     audio: "audio/kerlyon-fusion.mp3",
+    duree: "0:30",
     paroles: `Kerlyon Fusion
 Rennais, Lyonnais à l'unisson
 Chacun se bat pour ses couleurs
@@ -39,6 +42,7 @@ Maintenant chantons tous en chœur`,
     titre: "La Scuola Normale Superiore",
     categorie: "Kerlyon",
     audio: "audio/chant-de-pise.mp3",
+    duree: "0:07",
     paroles: `La scuola
 Normale
 Superiore`,
@@ -50,6 +54,7 @@ Superiore`,
     categorie: "Célébrations",
     remarque: "À chanter quand quelqu'un marque un point",
     audio: "audio/et-c-est-signe.mp3",
+    duree: "0:08",
     paroles: `Et c'est signé Guigui ! clap clap
 Guigui ! clap clap
 Guigui ! clap clap`,
@@ -59,6 +64,7 @@ Guigui ! clap clap`,
     titre: "On les a chicotés",
     categorie: "Célébrations",
     audio: "audio/on-les-a-chicotes.mp3",
+    duree: "0:28",
     paroles: `Olele
 Olala
 Mais qu'est-ce qui s'est passé ?
@@ -70,6 +76,7 @@ On les a chicotés !`,
     titre: "C'est la meilleure tribune",
     categorie: "À chanter tout le temps",
     audio: "audio/c-est-la-meilleure-tribune.mp3",
+    duree: "0:33",
     paroles: `C'est la meilleure tribune des inters
 De notre Bretagne nous sommes fiers
 Tous obsédés par la même idée
@@ -80,6 +87,7 @@ Encourager nos joueurs rennais`,
     titre: "Et quand Kerlann",
     categorie: "À chanter tout le temps",
     audio: "audio/et-quand-kerlann.mp3",
+    duree: "0:23",
     paroles: `Et quand Kerlann se met à chanter
 C'est tout le stade qui va s'enflammer
 Allez allez
@@ -91,6 +99,7 @@ Allez allez allez Kerlann`,
     titre: "Kerlann Sobriété",
     categorie: "À chanter tout le temps",
     audio: "audio/kerlann-sobriete.m4a",
+    duree: "1:08",
     paroles: `Sobriété
 Champomy Vittel à volonté
 Je bois de la tisane
@@ -113,6 +122,7 @@ Allez Rennes !`,
     titre: "L'ENS de l'ambiance",
     categorie: "À chanter tout le temps",
     audio: "audio/ens-de-l-ambiance.m4a",
+    duree: "0:06",
     paroles: `L'ENS de l'ambiance
 C'est l'ENS de l'ambiance`,
   },
@@ -139,6 +149,7 @@ Qui ne saute pas n'est pas rennais ! Hé !`,
     categorie: "Pour piquer les autres ENS",
     remarque: "Quand quelqu'un envoie un smash dans le ciel au volley",
     audio: "audio/avion.mp3",
+    duree: "0:09",
     paroles: `Un avion à réaction
 A rattrapé ton smash raté
 A rattrapé ton smash raté`,
@@ -149,6 +160,7 @@ A rattrapé ton smash raté`,
     categorie: "Pour piquer les autres ENS",
     remarque: "À remixer pour chaque ENS (lyonnais, parisiens)",
     audio: "audio/on-entend-pas.mp3",
+    duree: "0:08",
     paroles: `On n'entend pas chanter les Saclaysiens
 On n'entend pas chanter les Saclaysiens`,
   },
@@ -158,6 +170,7 @@ On n'entend pas chanter les Saclaysiens`,
     categorie: "Pour piquer les autres ENS",
     remarque: "À remixer pour chaque ENS (lyonnais, parisiens)",
     audio: "audio/mais-ils-sont-ou.mp3",
+    duree: "0:13",
     paroles: `Mais ils sont où ?
 Mais ils sont où ?
 Mais ils sont où les Saclaysiens lalalala`,
@@ -167,6 +180,7 @@ Mais ils sont où les Saclaysiens lalalala`,
     titre: "En prépa j'étais motivé",
     categorie: "Pour piquer les autres ENS",
     audio: "audio/tracteur-bis.m4a",
+    duree: "0:47",
     paroles: `Et en prépa j'ai tout donné
 Lalalilalala
 Aux concours j'étais préparé
