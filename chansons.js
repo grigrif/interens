@@ -93,7 +93,7 @@ Aller aller aller Kerlann`,
     audio: "audio/kerlann-sobriete.m4a",
     paroles: `Sobriété
 Champomy Vittel à volonté
-Joie de la tisane
+Je bois de la tisane
 Nous allons tous à Kerlann`,
   },
 
