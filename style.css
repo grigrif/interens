@@ -96,11 +96,11 @@ body { margin: 0; background: var(--fond); }
   .sommaire > ol { display: flex; flex-wrap: wrap; gap: 18px 32px; }
   .sommaire .categorie { flex: 1 1 calc(50% - 16px); }
   .sommaire .categorie + .categorie { margin-top: 0; }
-  /* Kerlyon (une seule chanson) en bas à gauche, pour que les grosses
-     catégories soient en haut :  À chanter… | Piques…
-                                  Kerlyon    | Célébrations      */
-  .sommaire .categorie[data-cat="kerlyon"] { order: 1; }
-  .sommaire .categorie[data-cat="celebrations"] { order: 2; }
+  /* Kerlyon (une seule chanson) en bas à droite, pour que les grosses
+     catégories soient en haut :  À chanter…   | Piques…
+                                  Célébrations | Kerlyon          */
+  .sommaire .categorie[data-cat="celebrations"] { order: 1; }
+  .sommaire .categorie[data-cat="kerlyon"] { order: 2; }
 }
 
 /* ---------- Chanson ---------- */
