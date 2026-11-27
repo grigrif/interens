@@ -31,9 +31,9 @@ const CHANSONS = [
     remarque: "Sur la mélodie de « J'ai deux passions »",
     audio: "audio/kerlyon-fusion.mp3",
     paroles: `Kerlyon Fusion
-Rennais Lyonnais à l'unission
-Chacun de bat pour ses couleurs
-Maintenant chantons tous en coeur`,
+Rennais Lyonnais à l'unisson
+Chacun se bat pour ses couleurs
+Maintenant chantons tous en chœur`,
   },
 
   {
@@ -51,9 +51,18 @@ Aller aller aller Kerlann`,
     titre: "Kerlann Sobriété",
     categorie: "Kerlyon",
     paroles: `Sobriété
-Champomi Vittel à volonté
+Champomy Vittel à volonté
 Joie de la tisane
 Nous allons tous à Kerlann`,
+  },
+
+  {
+    titre: "Shalalala ENS Rennes",
+    categorie: "Kerlyon",
+    paroles: `Shalalalalalala
+ENS Rennes
+Shalalalalalala
+ENS Rennes`,
   },
 
   {
@@ -77,7 +86,7 @@ C'est l'ENS de l'ambiance`,
   },
 
   {
-    titre: "Schola Normale Superiore",
+    titre: "La Scuola Normale Superiore",
     categorie: "Kerlyon",
     audio: "audio/chant-de-pise.mp3",
     paroles: `La scuola
@@ -111,7 +120,7 @@ Mais ils sont où les Saclaysiens lalalala`,
     audio: "audio/tracteur-bis.m4a",
     paroles: `Et en prépa j'ai tout donné
 Lalalilalala
-Aux concours j'était préparé
+Aux concours j'étais préparé
 Lalalilalala
 Et j'ai pas été pris a Ulm
 Lalalilalala
