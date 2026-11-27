@@ -129,7 +129,7 @@ A rattrapé ton smash raté`,
     titre: "Monster block",
     categorie: "Pour piquer les autres ENS",
     remarque: "Instructions de volley de base",
-    video: "video/monster-block.mp4",
+    video: "video/monster-block.mp4?v=2",
   },
 
   {
