@@ -126,10 +126,13 @@ A rattrapé ton smash raté`,
   },
 
   {
-    titre: "Monster block",
+    titre: "Chez nous à Rennes",
     categorie: "Piques envers les autres ENS",
-    remarque: "Instructions de volley de base",
-    video: "video/monster-block.mp4?v=2",
+    audio: "audio/chez-nous-a-rennes.m4a",
+    duree: "0:08",
+    paroles: `Chez nous à Rennes (x2)
+On a pas besoin de mégaphone
+Lalalalalalalala`,
   },
 
   {
@@ -216,12 +219,9 @@ Superiore`,
   },
 
   {
-    titre: "Chez nous à Rennes",
+    titre: "Monster block",
     categorie: "Célébrations",
-    audio: "audio/chez-nous-a-rennes.m4a",
-    duree: "0:08",
-    paroles: `Chez nous à Rennes (x2)
-On a pas besoin de mégaphone
-Lalalalalalalala`,
+    remarque: "Instructions de volley de base",
+    video: "video/monster-block.mp4?v=2",
   },
 ];
