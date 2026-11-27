@@ -214,4 +214,14 @@ On les a chicotés !`,
 Normale
 Superiore`,
   },
+
+  {
+    titre: "Chez nous à Rennes",
+    categorie: "Célébrations",
+    audio: "audio/chez-nous-a-rennes.m4a",
+    duree: "0:08",
+    paroles: `Chez nous à Rennes (x2)
+On a pas besoin de mégaphone
+Lalalalalalalala`,
+  },
 ];
