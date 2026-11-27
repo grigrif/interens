@@ -3,6 +3,7 @@
 // ============================================================
 
 const CATEGORIES = [
+  "À chanter tout le temps",
   "Kerlyon",
   "Chansons contre Saclay",
   "Chansons de victoire",
@@ -80,7 +81,7 @@ Aller Rennes !`,
 
   {
     titre: "C'est la meilleure tribune",
-    categorie: "Kerlyon",
+    categorie: "À chanter tout le temps",
     audio: "audio/c-est-la-meilleure-tribune.mp3",
     paroles: `C'est la meilleure tribune des inters
 De notre Bretagne nous sommes fiers
