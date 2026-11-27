@@ -141,8 +141,8 @@ ENS Rennes`,
   {
     titre: "Qui ne saute pas n'est pas rennais",
     categorie: "À chanter tout le temps",
-    paroles: `Qui ne saute pas n'est pas rennais ! Hé !
-Qui ne saute pas n'est pas rennais ! Hé !`,
+    paroles: `Qui ne saute pas n'est pas rennais
+Qui ne saute pas n'est pas rennais`,
   },
 
   // ----- Pour piquer les autres ENS -----
@@ -181,8 +181,8 @@ Mais ils sont où les Saclaysiens lalalala`,
   {
     titre: "En prépa j'étais motivé",
     categorie: "Pour piquer les autres ENS",
-    audio: "audio/tracteur-bis.m4a",
-    duree: "0:47",
+    audio: "audio/tracteur.mp3",
+    duree: "0:48",
     paroles: `Et en prépa j'ai tout donné
 Lalalilalala
 Aux concours j'étais préparé
