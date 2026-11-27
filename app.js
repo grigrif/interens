@@ -165,7 +165,9 @@ function creerVideo(src) {
   const v = el("video", "video");
   v.src = src;
   v.controls = true;
-  v.preload = "metadata";   // juste la durée et la première image
+  v.preload = "none";       // rien n'est téléchargé avant le Play
+  // image d'aperçu : même nom que la vidéo, en .webp (ex. video/x.mp4 → video/x.webp)
+  v.poster = src.replace(/\.[^.\/]+$/, ".webp");
   v.playsInline = true;     // sur iPhone, ne passe pas en plein écran tout seul
   // une seule chose qui joue à la fois (audio ou vidéo)
   v.addEventListener("play", () => lecteurs.forEach(a => a !== v && a.pause()));
