@@ -215,6 +215,7 @@ document.querySelectorAll(".recueil").forEach(racine => {
     // Sommaire : la catégorie (avec la puce rouge), puis ses chansons en dessous.
     // Le nom de la catégorie renvoie vers sa première chanson.
     const li = el("li", "categorie");
+    li.dataset.cat = slug(cat);   // ex. "kerlyon" (utilisé par style.css)
     const sous = el("ul", "titres");
     let premier = "";
 
